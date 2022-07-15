@@ -1,0 +1,156 @@
+.car-item {
+    height: 300px;
+    position: relative;
+}
+
+.overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6; 
+}
+
+.car-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cbtn {
+    border-radius: 1rem;
+}
+
+.fa-angle-right {
+    padding-left: 1rem;
+}
+
+.fa-plus {
+    padding-right: 0.5rem;
+}
+
+.card-img-top {
+    height: 30vh;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner:hover .card-img-top {
+    transform: scale(1.2);
+}
+
+.bg {
+    background: rgb(13,13,13);
+    background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(187,45,59,1) 100%, rgba(0,0,0,1) 100%);
+    text-decoration: none;
+}
+
+#home-1, #home-2 {
+    color: #fff !important; 
+}
+
+/* .nav-list {
+    background: #F7F7F7 !important;
+} */
+
+.nav-list:hover {
+    color: #dc4225;
+}
+
+.pagination > li > a {
+    background-color: white;
+    color: #bb2d3b;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a {
+    color: white;
+    background-color: #bb2d3b !Important;
+    border: solid 1px #bb2d3b !Important;
+}
+
+.pagination > .active > a:hover {
+    background-color: #bb2d3b !Important;
+    border: solid 1px #bb2d3b;
+}
+
+.fav-list-row {
+    border-bottom: 1px solid #bb2d3b;
+}
+
+.fav-list-row:last-of-type {
+    border-bottom: 0;
+}
+
+.tab-color .nav-link {
+    color: #000 !important;
+}
+
+.tab-color .nav-link.active {
+    color: #bb2d3b !important;
+    font-weight: 800;
+}
+
+#on {
+    color: #ffc107;
+}
+
+#off {
+    color: #e4e5e9;
+}
+
+@media only screen and (max-width: 576px) {
+    .car-item img{
+        height: 300px;
+    }
+
+    .cbtn {
+        font-size: 1rem;
+        padding: 1rem !important;
+    }
+
+    .fa-angle-right {
+        padding-left: 0.5rem;
+    }
+
+    .search-sec {
+        margin: 0 !important;
+    }
+
+    .bg:first-of-type {
+        margin-bottom: 4rem;
+    }
+
+    .f-col-item:nth-of-type(n+1) {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .sign-in {
+        max-width: 100% !important;
+    }
+
+    .small-device-search {
+        display: block !important;
+    }
+
+    .large-device-search {
+        display: none !important;
+    }
+}

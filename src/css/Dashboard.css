@@ -1,0 +1,39 @@
+/* th, td {
+    max-width: 1rem;
+    margin: 10px 0;
+} */
+
+/* .table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: red; 
+} */
+.table > :not(:first-child) {
+    border-top: 2px solid #ccc;
+}
+
+/* .nav-pills .nav-link {
+    color: #000 !important;
+} */
+
+.nav-pills .nav-link.active {
+    color: #fff !important;
+    background-color: #bb2d3b !important;
+}
+
+/* .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+} */
+
+@media only screen and (max-width: 991px) {
+    .main-dashboard {
+        display: none !important;
+    }
+
+    .msg {
+        display: block !important;
+    }
+}
