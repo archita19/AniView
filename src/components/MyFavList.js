@@ -62,18 +62,18 @@ function MyFavListItem(props) {
     fetchData()
   }, [])
 
-  const [oldValue, setOldValue] = useState('');
+  // const [oldValue, setOldValue] = useState('');
 
-  const fetchItem = async() => {
-    try {
-      const queryItem = query(collection(db, 'favlist'), where('itemId', '==', id));
-      const docRes = await getDocs(queryItem);
-      setOldValue(docRes.docs.map(doc => ({...doc.data(), id: doc.id})))
-    }
-    catch(err) {
-      console.log(err);
-    }
-  }
+  // const fetchItem = async() => {
+  //   try {
+  //     const queryItem = query(collection(db, 'favlist'), where('itemId', '==', id));
+  //     const docRes = await getDocs(queryItem);
+  //     setOldValue(docRes.docs.map(doc => ({...doc.data(), id: doc.id})))
+  //   }
+  //   catch(err) {
+  //     console.log(err);
+  //   }
+  // }
 
   const updateItem = async(val) => {
     // console.log(oldValue[0].status)
@@ -137,7 +137,7 @@ function MyFavListItem(props) {
 
   useEffect(() => {
     fetchData()
-    fetchItem()
+    // fetchItem()
 
     if(status !== valueAnimeStatus || status !== valueMangaStatus) {
       updateFavListItem();
@@ -258,15 +258,6 @@ export default function MyFavList() {
       navigate('/sign-in', {state: "/my-fav-list"});
   }, [user])
 
-  const [drop, setDrop] = useState(0)
-  const getDrop = (val) => {
-    setDrop(val)
-  }
-
-  // useEffect(() => {
-  //   fetchAnimeList();
-  //   fetchMangaList();
-  // }, [drop])
 
   return (
     <>
