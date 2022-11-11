@@ -45,7 +45,7 @@ function App() {
           <Route path='/reviews/:type/:name/:id' element={<Reviews/>}></Route>
           <Route path='/:type/:id' element={<Item/>}></Route>
           <Route path='/:type/:id/:userId' element={<Item/>}></Route>
-          <Route path='/admin-dashboard' element={<Dashboard/>}></Route>
+          <Route exact path='/admin-dashboard' element={<Dashboard/>}></Route>
           <Route path='/admin-dashboard-edit/:type/:itemId' element={<DashboardEdit/>}></Route>
           <Route path='/admin/sign-in' element={<SignInAdmin/>}></Route>
           <Route path='*' element={<PageNotFound/>}></Route>
