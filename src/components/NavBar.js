@@ -202,6 +202,11 @@ export default function NavBar(props) {
                   <NavDropdown.Item as={Link} to="/profile">
                     Profile
                   </NavDropdown.Item>
+                  {user.email === "john@gmail.com" && (
+                    <NavDropdown.Item as={Link} to="/admin-dashboard">
+                      Admin Dashboard
+                    </NavDropdown.Item>
+                  )}
                   <NavDropdown.Item onClick={handleLogOut}>
                     Logout
                   </NavDropdown.Item>
