@@ -34,7 +34,7 @@ function App() {
         <NavBar theme={theme === 'light' ? "light" : "dark"}/>
         <GlobalStyles/>
         <Routes>
-          <Route exact path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage/>} />
           <Route path='/browse-animes' element={<BrowseAnime/>}></Route>
           <Route path='/browse-mangas' element={<BrowseManga/>}></Route>
           <Route path='/my-fav-list' element={<MyFavList/>}></Route>
